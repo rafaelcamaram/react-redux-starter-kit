@@ -1,24 +1,41 @@
+/* Dependencies */
 import React, { Component } from 'react';
-import { getDate } from '../../actions/dateAction';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+
+/* Actions */
+import * as dateActions from '../../actions/date';
 
 class Date extends Component {
+  tick() {
+    this.props.actions.getDate();
+  }
+
+  componentDidMount() {
+    this.timerID = setInterval(() => this.tick(), 1000);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.timerID);
+  }
+
   render() {
     return (
-      <div className="Date">
-        <h3>{this.props.date}</h3>
-        <button onClick={getDate}>Get Tempo</button>
-      </div>
+      <p>Date: {this.props.date ? this.props.date.toUTCString() : ''}</p>
     );
   }
 }
 
-Date.propTypes = {
-	dispatch: React.PropTypes.func.isRequired,
-  date: React.PropTypes.date.isRequired
-};
+function mapStateToProps(state, props) {
+  return {
+    date: state.date.date ? state.date.date : '',
+  };
+}
 
-export default connect((state) => {
-	return {
-		date: state.date
-	};
-})(Date);
+function mapDispatchToProps(dispatch) {
+  return {
+    actions: bindActionCreators(dateActions, dispatch),
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Date);
