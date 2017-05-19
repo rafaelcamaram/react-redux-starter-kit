@@ -1,10 +1,19 @@
+/* Dependencies */
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider }	from 'react-redux';
 
-/* Import Pages */
+/* Utils */
+import Store from './app/store';
+
+/* Components */
 import App from './app/components/pages/App';
 
+const store = Store();
+
 ReactDOM.render(
-  <App />,
+  <Provider store={store}>
+    <App />
+  </Provider>,
   document.getElementById('root')
 );
