@@ -1,8 +1,10 @@
+/* Dependencies */
 import { combineReducers } from 'redux';
-import state from './appReducer';
 
-const index = combineReducers({
-    state
+/* Reducers */
+import date from './date';
+
+const rootReducer = combineReducers({
+  date,
 });
-
-export default index;
+export default rootReducer;

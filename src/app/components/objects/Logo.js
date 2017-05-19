@@ -1,6 +1,7 @@
+/* Dependencies */
 import React, {Component} from 'react';
 
-/* Import Images */
+/* Images */
 import logo from '../../../assets/images/logo.svg';
 
 class Logo extends Component {

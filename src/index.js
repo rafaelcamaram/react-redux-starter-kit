@@ -1,10 +1,15 @@
+/* Dependencies */
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider }	from 'react-redux';
-import index from './app/reducers/index';
 
-/* Import Pages */
+/* Utils */
+import Store from './app/store';
+
+/* Components */
 import App from './app/components/pages/App';
+
+const store = Store();
 
 ReactDOM.render(
   <Provider store={store}>

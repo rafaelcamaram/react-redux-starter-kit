@@ -1,6 +1,7 @@
+/* Dependencies */
 import React, {Component} from 'react';
 
-/* Import Objects */
+/* Components */
 import Logo from '../objects/Logo';
 
 class Header extends Component {
