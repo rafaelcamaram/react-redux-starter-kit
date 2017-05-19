@@ -6,7 +6,7 @@ import { bindActionCreators } from 'redux';
 /* Actions */
 import * as dateActions from '../../actions/date';
 
-class Date extends Component {
+class DateCountdown extends Component {
   tick() {
     this.props.actions.getDate();
   }
@@ -38,4 +38,4 @@ function mapDispatchToProps(dispatch) {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Date);
+export default connect(mapStateToProps, mapDispatchToProps)(DateCountdown);
