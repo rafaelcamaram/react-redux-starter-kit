@@ -2,7 +2,7 @@
 ---
 
 A fork of [react-starter-kit](https://github.com/rafaelcamaram/react-starter-kit) with Redux **out of the box**!
-You can create React apps with no build configuration. But if something doesn’t work *please* [**file an issue**](https://github.com/rafaelcaramam/react-redux-starter-kit/issues/new).
+You can create React apps with no build configuration. But if something doesnt work *please* [**file an issue**](https://github.com/rafaelcaramam/react-redux-starter-kit/issues/new).
 
 ## Status?
 
@@ -25,7 +25,7 @@ Just create a project, and you’re good to go.
 npm install
 ```
 
-2. **Run this baby**
+2. **Run**
 
 ```sh
 npm start
