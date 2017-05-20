@@ -11,7 +11,7 @@ You can create React apps with no build configuration. But if something doesn’
 
 ## Get Started!
 
-As this project is based on [create-react-apep](https://github.com/facebookincubator/create-react-app), you don’t need to install or configure tools like Webpack or Babel. They are preconfigured and hidden so that you can focus on the code.
+As this project is based on [create-react-app](https://github.com/facebookincubator/create-react-app), you don’t need to install or configure tools like Webpack or Babel. They are preconfigured and hidden so that you can focus on the code.
 
 Just create a project, and you’re good to go.
 
