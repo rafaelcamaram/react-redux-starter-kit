@@ -2,7 +2,7 @@
 import React, {Component} from 'react';
 
 /* Components */
-import Logo from '../objects/Logo';
+import Logo from '../../objects/logo/Logo';
 
 class Header extends Component {
   render() {

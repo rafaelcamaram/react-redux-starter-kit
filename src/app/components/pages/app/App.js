@@ -2,8 +2,8 @@
 import React, {Component} from 'react';
 
 /* Components */
-import Header from '../components/Header';
-import DateCountdown from '../components/DateCountdown';
+import Header from '../../components/header/Header';
+import DateCountdown from '../../components/date-countdown/DateCountdown';
 
 class App extends Component {
 

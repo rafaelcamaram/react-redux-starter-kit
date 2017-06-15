@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
 /* Actions */
-import * as dateActions from '../../actions/date';
+import * as dateActions from '../../../actions/date';
 
 class DateCountdown extends Component {
   tick() {

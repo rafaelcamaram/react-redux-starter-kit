@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: white;
+}
+
+/* COMPONENTS */
+
+@import "app/components/components/header/header";
+
+/* OBJECTS */
+
+@import "app/components/objects/logo/logo";
+
+/* PAGES */
+
+@import "app/components/pages/app/app";

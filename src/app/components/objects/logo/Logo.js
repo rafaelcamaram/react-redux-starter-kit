@@ -2,7 +2,7 @@
 import React, {Component} from 'react';
 
 /* Images */
-import logo from '../../../assets/images/logo.svg';
+import logo from '../../../../assets/img/logo.svg';
 
 class Logo extends Component {
   render() {
